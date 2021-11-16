@@ -6,19 +6,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fillViewport="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        android:fillViewport="true"
         app:layout_constraintTop_toTopOf="parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <TextView
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--<TextView
                 android:id="@+id/generalView"
                 android:layout_width="115dp"
                 android:layout_height="wrap_content"
@@ -30,21 +39,23 @@
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/titleView"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent" />-->
+
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
                 android:layout_height="246dp"
-                app:srcCompat="@drawable/altaguajira"
+                android:contentDescription="@string/image_place"
+                app:srcCompat="@drawable/alta_guajira"
                 tools:layout_editor_absoluteX="50dp"
                 tools:layout_editor_absoluteY="107dp" />
+
             <TextView
                 android:id="@+id/general2View"
                 android:layout_width="115dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="5dp"
-                android:text="DESCRIPCIÓN"
+                android:text="@string/description"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
@@ -53,16 +64,14 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/especificView"
-                android:layout_width="372dp"
+                android:id="@+id/specificView"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="7dp"
-                android:layout_marginEnd="150dp"
-                android:text="Situada entre el extremo nororiental de Colombia y el extremo noroccidental de Venezuela. En ella se encuentra el Cabo de la Vela, terreno desértico habitado en su mayor parte por el pueblo indígena Wayú, que llama al lugar con el nombre de Jepirra, que en su cosmogonía es el espacio sagrado donde los espíritus de sus difuntos llegan para hacer su tránsito hacia «lo desconocido». Punta Gallinas es el extremo más septentrional de la placa continental de América del Sur, ubicada al extremo norte de la península de La Guajira. Es un impresionante escenario natural de mesetas, dunas y acantilados rocosos, que emergen del mar, abrazando a la bahía Hondita. Tiene una inmensa duna que alcanza 60 metros de altura que se alza como una muralla justo en la orilla del mar."
-                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:text="@string/description_text"
                 app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
         </LinearLayout>
     </ScrollView>

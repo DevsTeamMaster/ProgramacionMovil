@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">MinTicApp</string>
+    <string name="app_name">La Guajira</string>
+    <string name="places_interest">Lugares de interés</string>
+    <string name="name_place">ALTA GUAJIRA</string>
+    <string name="image_place">Imagen del lugar</string>
+    <string name="description">DESCRIPCIÓN</string>
+    <string name="description_text">Situada entre el extremo nororiental de Colombia y el extremo
+        noroccidental de Venezuela. En ella se encuentra el Cabo de la Vela, terreno desértico
+        habitado en su mayor parte por el pueblo indígena Wayú, que llama al lugar con el nombre de
+        Jepirra, que en su cosmogonía es el espacio sagrado donde los espíritus de sus difuntos
+        llegan para hacer su tránsito hacia «lo desconocido». Punta Gallinas es el extremo más
+        septentrional de la placa continental de América del Sur, ubicada al extremo norte de la
+        península de La Guajira. Es un impresionante escenario natural de mesetas, dunas y
+        acantilados rocosos, que emergen del mar, abrazando a la bahía Hondita. Tiene una inmensa
+        duna que alcanza 60 metros de altura que se alza como una muralla justo en la orilla del mar."
+</string>
 </resources>
