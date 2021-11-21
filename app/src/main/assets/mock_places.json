@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Cabo de la Vela",
+    "description": "En el extremo norte del territorio colombiano, en la región de La Guajira y antes de llegar a Punta Gallinas, se encuentra este destino imperdible a la hora de visitar nuestro país. Se trata de una de las playas más tranquilas y paradisíacas, ubicada en la zona desértica más amplia de Colombia que a su vez comparte con el Mar Caribe.\n\nSu privilegiada ubicación en el Caribe colombiano la hace acreedora de los más inolvidables paisajes, donde se encuentra la belleza de diferentes ecosistemas y las condiciones ideales para realizar actividades turísticas que te encantarán.",
+    "imageUrl": ""
+  },
+  {
+    "name": "El Cerrejon",
+    "description": "El Cerrejón es la operación de minería de carbón de exportación abierto más grande del mundo. Localizada en la península y departamento de La Guajira, en el municipio de Barrancas, al noreste de Colombia y de Suramérica.La capacidad actual de producción de carbón se estima en 27.5 millones de toneladas métricas por año. Debido a su calidad competitiva y productiva se ha convertido en uno de los proveedores mayoritarios del mercado internacional, consolidándose así como: \"Operación de Clase Mundial\" que trae consigo progreso, bienestar, y un buen posicionamiento de Colombia a nivel internacional.",
+    "imageUrl": ""
+  },
+  {
+    "name": "Maicao",
+    "description": "Fue el principal centro de inmigración árabe en Colombia y posee el más importante puerto terrestre de La Guajira en donde se puede encontrar diversa mercancía proveniente de Venezuela.Otros atractivos de interés para el turista en Maicao son la laguna Majayura y la Catedral de San José.",
+    "imageUrl": ""
+  },
+  {
+    "name": "Palomino",
+    "description": "Con el Mar Caribe al norte, la Sierra Nevada de Santa Marta al sur, el río Palomino al oeste y el río San Salvador al este, Palomino conforma uno de los principales destinos turísticos de La Guajira, Colombia. Este pequeño pueblo de pescadores recibe cada año a miles de turistas que buscan diferentes cosas. Algunos llegan por su ambiente divertido, otros por sus enormes olas perfectas para hacer surf y otros por su increíble entorno natural.",
+    "imageUrl": ""
+  },
+  {
+    "name": "",
+    "description": "",
+    "imageUrl": ""
+  }
+]
