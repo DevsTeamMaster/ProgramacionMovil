@@ -1,5 +1,6 @@
 package com.mintic.minticapp
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.DividerItemDecoration
@@ -26,12 +27,6 @@ class ListActivity : AppCompatActivity() {
         recyclerView = findViewById(R.id.rvListOfPlaces)
         setUpRecyclerView()
         initDataFromFile()
-
-        /**val viewButton = findViewById<Button>(R.id.buttonView_go)
-        viewButton.setOnClickListener {
-        val intent = Intent(this, DetailActivity::class.java)
-        startActivity(intent)
-        }**/
     }
 
     private fun setUpRecyclerView() {
@@ -45,6 +40,7 @@ class ListActivity : AppCompatActivity() {
             )
         )
         placesAdapter = PlaceAdapter(listOfPlaces, this) { listOfPlaces ->
+            Log.d("ListActivity", "onClick** ${listOfPlaces?.name}")
             placeOnClick(listOfPlaces)
         }
         recyclerView.adapter = placesAdapter
@@ -89,5 +85,23 @@ class ListActivity : AppCompatActivity() {
 
     private fun placeOnClick(listOfPlaces: ListOfPlaces?) {
         Log.d("TAG", "Click on: $listOfPlaces")
+        listOfPlaces?.let {
+            navigateToDetail(it)
+        }
+    }
+
+    private fun navigateToDetail(listOfPlaces: ListOfPlaces) {
+        /**val viewButton = findViewById<Button>(R.id.buttonView_go)
+        viewButton.setOnClickListener {}**/
+        val intent = Intent(this, DetailActivity::class.java)
+        intent.apply {
+            putExtra("listOfPlaces_extra_name", listOfPlaces.name)
+            putExtra("listOfPlaces_extra_description", listOfPlaces.description)
+            putExtra("listOfPlaces_extra_image", listOfPlaces.imageURL)
+        }
+        //intent.putExtra("listOfPlaces_extra_name", listOfPlaces.name)
+
+        startActivity(intent)
+
     }
 }

@@ -31,7 +31,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                tools:text="Nombre del lugar Nombre del lugar" />
+                tools:text="Nombre del lugar" />
 
             <TextView
                 android:id="@+id/textView_resume"

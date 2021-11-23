@@ -2,6 +2,7 @@ package com.mintic.minticapp
 
 import android.content.Context
 import android.support.v7.widget.RecyclerView
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -32,6 +33,16 @@ class PlaceAdapter(
         private var resumeText: TextView = itemView.findViewById(R.id.textView_resume)
         private var currentPlace: ListOfPlaces? = null
 
+        init {
+            itemView.setOnClickListener {
+                Log.d("TAG", "itemView OnClick")
+                currentPlace?.let {
+                    listOfPlaces -> onClick(listOfPlaces)
+                }
+            }
+        }
+
+        /* Bin place, resume and image. */
         fun bind(place: ListOfPlaces) {
             currentPlace = place
 
