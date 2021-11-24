@@ -16,5 +16,10 @@ class DetailActivity : AppCompatActivity() {
         Log.d("TAG", "Name: $name")
         Log.d("TAG", "Description: $description")
         Log.d("TAG", "Image: $image")
+
+        var textViewResume = findViewById<TextView>(R.id.textView_resume)
+        var title = findViewById<TextView>(R.id.toolbar_title)
+        textViewResume.text = description
+        title.text = name
     }
 }

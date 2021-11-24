@@ -91,8 +91,6 @@ class ListActivity : AppCompatActivity() {
     }
 
     private fun navigateToDetail(listOfPlaces: ListOfPlaces) {
-        /**val viewButton = findViewById<Button>(R.id.buttonView_go)
-        viewButton.setOnClickListener {}**/
         val intent = Intent(this, DetailActivity::class.java)
         intent.apply {
             putExtra("listOfPlaces_extra_name", listOfPlaces.name)

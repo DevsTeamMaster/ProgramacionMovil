@@ -51,20 +51,20 @@
                 tools:layout_editor_absoluteY="107dp" />
 
             <TextView
-                android:id="@+id/general2View"
+                android:id="@+id/textView_title"
                 android:layout_width="115dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:textStyle="bold"
+                android:text="@string/description"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/titleView"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:text="@string/description"/>
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/specificView"
+                android:id="@+id/textView_resume"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
