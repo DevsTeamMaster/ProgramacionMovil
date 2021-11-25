@@ -1,8 +1,9 @@
 package com.mintic.minticapp
 
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.ImageView
 import android.widget.TextView
 
 class DetailActivity : AppCompatActivity() {
@@ -10,15 +11,16 @@ class DetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
 
-        var name = intent.getStringExtra("listOfPlaces_extra_name")
-        var description = intent.getStringExtra("listOfPlaces_extra_description")
-        var image = intent.getStringExtra("listOfPlaces_extra_image")
+        val name = intent.getStringExtra("listOfPlaces_extra_name")
+        val description = intent.getStringExtra("listOfPlaces_extra_description")
+        val imageURL = intent.getStringExtra("listOfPlaces_extra_image")
         Log.d("TAG", "Name: $name")
         Log.d("TAG", "Description: $description")
-        Log.d("TAG", "Image: $image")
+        Log.d("TAG", "Image: $imageURL")
 
-        var textViewResume = findViewById<TextView>(R.id.textView_resume)
-        var title = findViewById<TextView>(R.id.toolbar_title)
+        val textViewResume = findViewById<TextView>(R.id.textView_resume)
+        val title = findViewById<TextView>(R.id.toolbar_title)
+        val image = findViewById<ImageView>(R.id.imageView_detail)
         textViewResume.text = description
         title.text = name
     }

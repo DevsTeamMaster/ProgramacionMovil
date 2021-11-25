@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/title"
@@ -46,7 +46,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="246dp"
                 android:contentDescription="@string/image_place"
-                app:srcCompat="@drawable/alta_guajira"
                 tools:layout_editor_absoluteX="50dp"
                 tools:layout_editor_absoluteY="107dp" />
 
@@ -75,4 +74,4 @@
                 tools:text="@string/description_text"/>
         </LinearLayout>
     </ScrollView>
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
