@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/title"
@@ -42,21 +42,20 @@
                 app:layout_constraintTop_toTopOf="parent" />-->
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/imageView_detail"
                 android:layout_width="match_parent"
                 android:layout_height="246dp"
                 android:contentDescription="@string/image_place"
-                app:srcCompat="@drawable/alta_guajira"
                 tools:layout_editor_absoluteX="50dp"
                 tools:layout_editor_absoluteY="107dp" />
 
             <TextView
-                android:id="@+id/general2View"
+                android:id="@+id/textView_title"
                 android:layout_width="115dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="@string/description"
                 android:textStyle="bold"
+                android:text="@string/description"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -64,15 +63,15 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/specificView"
+                android:id="@+id/textView_resume"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="24dp"
-                android:text="@string/description_text"
                 app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/description_text"/>
         </LinearLayout>
     </ScrollView>
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
