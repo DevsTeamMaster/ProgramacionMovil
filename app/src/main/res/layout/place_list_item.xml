@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    tools:ignore="MissingClass">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,6 +30,7 @@
                 android:id="@+id/textView_place"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 tools:text="Nombre del lugar" />
@@ -37,18 +39,43 @@
                 android:id="@+id/textView_resume"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:maxLines="3"
+                android:layout_marginStart="5dp"
                 android:ellipsize="end"
+                android:maxLines="3"
                 tools:text="Descripción corta del lugar Descripción corta del lugar Descripción corta del lugar" />
 
-            <Button
-                android:id="@+id/buttonView_go"
-                android:layout_width="wrap_content"
-                android:layout_height="36dp"
-                android:backgroundTint="@color/accent_900"
-                android:text="@string/button"
-                android:textColor="@color/white"
-                android:textSize="11sp" />
+            <TextView
+                android:id="@+id/textView_fav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                tools:text="Puntuación: 3/5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonView_go"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:backgroundTint="@color/accent_900"
+                    android:text="@string/button"
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/textView_temp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    tools:text="Temperatura: 24°" />
+
+
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 
