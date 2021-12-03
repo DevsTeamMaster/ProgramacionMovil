@@ -1,16 +1,11 @@
 package com.devsteammaster.poi
 
-import android.graphics.BitmapFactory
-import android.os.Build
 import android.os.Bundle
-import android.util.Base64
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.setFragmentResultListener
 import com.bumptech.glide.Glide
@@ -24,7 +19,6 @@ class DetailFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_detail, container, false)
     }
 
-    @RequiresApi(Build.VERSION_CODES.O)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -41,10 +35,7 @@ class DetailFragment : Fragment() {
 
             titleView.text = title
             textViewResume.text = description
-            val imageBytes = Base64.decode(image, Base64.DEFAULT)
-            Log.d("TAG","ImageBytes $imageBytes")
-            val decodedString = BitmapFactory.decodeByteArray(imageBytes, 0, imageBytes.size)
-            Log.d("TAG","ImageString $decodedString")
+
             Glide.with(view).load(image).into(imageViewPlace)
         }
     }
