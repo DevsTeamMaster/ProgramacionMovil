@@ -4,6 +4,6 @@ data class ListOfPlaces(
     val name: String,
     val description: String,
     val imageURL: String,
-    /**val score: String,
-    val temperature: String**/
+    val punctuation: String,
+    val temperature: String
 )

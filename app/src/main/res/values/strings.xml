@@ -15,4 +15,13 @@
         duna que alcanza 60 metros de altura que se alza como una muralla justo en la orilla del mar."
 </string>
     <string name="button">Ver más</string>
+
+    <string name="messages_header">Opciones</string>
+    <string name="notify_title">Autorizar notificaciones</string>
+    <string name="sound_title">Activar sonido</string>
+
+    <string name="settings_button">Configuración</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

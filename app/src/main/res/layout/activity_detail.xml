@@ -27,24 +27,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
-            <!--<TextView
-                android:id="@+id/generalView"
-                android:layout_width="115dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="150dp"
-                android:layout_marginTop="20dp"
-                android:text="ALTA GUAJIRA"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/titleView"
-                app:layout_constraintTop_toTopOf="parent" />-->
-
             <ImageView
                 android:id="@+id/imageView_detail"
                 android:layout_width="match_parent"
                 android:layout_height="246dp"
+                android:background="@drawable/palomino"
                 android:contentDescription="@string/image_place"
                 tools:layout_editor_absoluteX="50dp"
                 tools:layout_editor_absoluteY="107dp" />

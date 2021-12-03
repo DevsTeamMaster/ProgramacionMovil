@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/listActivity">
+
+    <fragment
+        android:id="@+id/listActivity"
+        android:name="com.mintic.minticapp.ListActivity"
+        android:label="listActivity"
+        tools:layout="@layout/activity_list">
+        <action
+            android:id="@+id/action_listActivity_to_detailActivity"
+            app:destination="@id/detailActivity" />
+        <action
+            android:id="@+id/action_listActivity_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailActivity"
+        android:name="com.mintic.minticapp.DetailActivity"
+        android:label="DetailActivity"
+        tools:layout="@layout/activity_detail">
+        <action
+            android:id="@+id/action_detailActivity_to_listActivity"
+            app:destination="@id/listActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.mintic.minticapp.SettingsFragment"
+        android:label="SettingsFragment"
+        tools:layout="@xml/root_preferences" />
+</navigation>

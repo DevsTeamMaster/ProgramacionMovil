@@ -1,13 +1,13 @@
 package com.mintic.minticapp
 
 import android.content.Context
-import androidx.recyclerview.widget.RecyclerView
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
 class PlaceAdapter(
@@ -33,6 +33,8 @@ class PlaceAdapter(
         private var imageView: ImageView = itemView.findViewById(R.id.imageView_thumb)
         private var nameText: TextView = itemView.findViewById(R.id.textView_place)
         private var resumeText: TextView = itemView.findViewById(R.id.textView_resume)
+        private var punctuationText: TextView = itemView.findViewById(R.id.textView_punctuation_num)
+        private var temperatureText: TextView = itemView.findViewById(R.id.textView_temperature_num)
         private var currentPlace: ListOfPlaces? = null
 
         init {
@@ -50,6 +52,8 @@ class PlaceAdapter(
 
             nameText.text = place.name
             resumeText.text = place.description
+            punctuationText.text = place.punctuation
+            temperatureText.text = place.temperature
 
             Glide.with(context)
                 .load(place.imageURL)

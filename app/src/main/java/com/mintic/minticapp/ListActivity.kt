@@ -1,11 +1,11 @@
 package com.mintic.minticapp
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.RecyclerView
-import android.util.Log
 import org.json.JSONArray
 import org.json.JSONException
 import java.io.IOException
@@ -55,7 +55,9 @@ class ListActivity : AppCompatActivity() {
                 val place = ListOfPlaces(
                     placeJson.getString("name"),
                     placeJson.getString("description"),
-                    placeJson.getString("imageUrl")
+                    placeJson.getString("imageUrl"),
+                    placeJson.getString("punctuation"),
+                    placeJson.getString("temperature")
                 )
                 Log.d("TAG", "generatePlaces: $place")
                 listOfPlaces.add(place)
@@ -96,6 +98,8 @@ class ListActivity : AppCompatActivity() {
             putExtra("listOfPlaces_extra_name", listOfPlaces.name)
             putExtra("listOfPlaces_extra_description", listOfPlaces.description)
             putExtra("listOfPlaces_extra_image", listOfPlaces.imageURL)
+            putExtra("listOfPlaces_extra_punctuation", listOfPlaces.punctuation)
+            putExtra("listOfPlaces_extra_temperature", listOfPlaces.temperature)
         }
         //intent.putExtra("listOfPlaces_extra_name", listOfPlaces.name)
 
