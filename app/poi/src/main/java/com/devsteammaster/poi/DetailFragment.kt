@@ -22,7 +22,7 @@ class DetailFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val titleView = view.findViewById<TextView>(R.id.toolbar_title)
+        val titleView = view.findViewById<TextView>(R.id.titleView_bar)
         val textViewResume = view.findViewById<TextView>(R.id.textView_resume)
         val imageViewPlace = view.findViewById<ImageView>(R.id.imageView_detail)
 
