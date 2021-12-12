@@ -1,0 +1,16 @@
+com/devsteammaster/poi/databinding/FragmentDetailBinding.java
+ com.devsteammaster.poi.databinding.FragmentDetailBinding
+com/devsteammaster/poi/databinding/ActivityMainBinding.java
+ com.devsteammaster.poi.databinding.ActivityMainBinding
+com/devsteammaster/poi/databinding/FragmentListBinding.java
+ com.devsteammaster.poi.databinding.FragmentListBinding
+com/devsteammaster/poi/databinding/BarTitleBinding.java
+ com.devsteammaster.poi.databinding.BarTitleBinding
+com/devsteammaster/poi/databinding/FragmentHomeBinding.java
+ com.devsteammaster.poi.databinding.FragmentHomeBinding
+com/devsteammaster/poi/databinding/ToolbarBinding.java
+ com.devsteammaster.poi.databinding.ToolbarBinding
+com/devsteammaster/poi/BuildConfig.java
+ com.devsteammaster.poi.BuildConfig
+com/devsteammaster/poi/databinding/PlaceListItemBinding.java
+ com.devsteammaster.poi.databinding.PlaceListItemBinding

@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "/home/mr_5ch1zo1d/AndroidStudioProjects/ProgramacionMovil/app/poi/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_home.xml",
+        "source": "/home/mr_5ch1zo1d/AndroidStudioProjects/ProgramacionMovil/app/poi/src/main/res/layout/fragment_home.xml"
+    },
+    {
+        "merged": "/home/mr_5ch1zo1d/AndroidStudioProjects/ProgramacionMovil/app/poi/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/place_list_item.xml",
+        "source": "/home/mr_5ch1zo1d/AndroidStudioProjects/ProgramacionMovil/app/poi/src/main/res/layout/place_list_item.xml"
+    },
+    {
+        "merged": "/home/mr_5ch1zo1d/AndroidStudioProjects/ProgramacionMovil/app/poi/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_detail.xml",
+        "source": "/home/mr_5ch1zo1d/AndroidStudioProjects/ProgramacionMovil/app/poi/src/main/res/layout/fragment_detail.xml"
+    },
+    {
+        "merged": "/home/mr_5ch1zo1d/AndroidStudioProjects/ProgramacionMovil/app/poi/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/home/mr_5ch1zo1d/AndroidStudioProjects/ProgramacionMovil/app/poi/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/mr_5ch1zo1d/AndroidStudioProjects/ProgramacionMovil/app/poi/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_map.xml",
+        "source": "/home/mr_5ch1zo1d/AndroidStudioProjects/ProgramacionMovil/app/poi/src/main/res/layout/fragment_map.xml"
+    },
+    {
+        "merged": "/home/mr_5ch1zo1d/AndroidStudioProjects/ProgramacionMovil/app/poi/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/toolbar.xml",
+        "source": "/home/mr_5ch1zo1d/AndroidStudioProjects/ProgramacionMovil/app/poi/src/main/res/layout/toolbar.xml"
+    },
+    {
+        "merged": "/home/mr_5ch1zo1d/AndroidStudioProjects/ProgramacionMovil/app/poi/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_list.xml",
+        "source": "/home/mr_5ch1zo1d/AndroidStudioProjects/ProgramacionMovil/app/poi/src/main/res/layout/fragment_list.xml"
+    },
+    {
+        "merged": "/home/mr_5ch1zo1d/AndroidStudioProjects/ProgramacionMovil/app/poi/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/bar_title.xml",
+        "source": "/home/mr_5ch1zo1d/AndroidStudioProjects/ProgramacionMovil/app/poi/src/main/res/layout/bar_title.xml"
+    }
+]
