@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "MinTicApp"
 include ':app'
+include ':app:poi'
