@@ -1,4 +1,4 @@
-package com.devsteammaster.poi
+package com.devsteammaster.poi.remote
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder

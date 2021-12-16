@@ -1,10 +1,12 @@
-package com.devsteammaster.poi
+package com.devsteammaster.poi.presentation
 
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.NavHostFragment
+import com.devsteammaster.poi.R
+import com.devsteammaster.poi.model.ListOfPlacesViewModel
 
 class MainActivity : AppCompatActivity() {
 

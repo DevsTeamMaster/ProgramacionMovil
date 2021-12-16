@@ -1,9 +1,10 @@
-package com.devsteammaster.poi
+package com.devsteammaster.poi.model
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.devsteammaster.poi.remote.RetrofitFactory
 import kotlinx.coroutines.launch
 
 class ListOfPlacesViewModel : ViewModel() {

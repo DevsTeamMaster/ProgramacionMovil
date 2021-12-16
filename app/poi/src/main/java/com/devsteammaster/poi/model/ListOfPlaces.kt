@@ -1,4 +1,4 @@
-package com.devsteammaster.poi
+package com.devsteammaster.poi.model
 
 import com.google.gson.annotations.SerializedName
 

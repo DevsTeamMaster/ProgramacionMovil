@@ -1,4 +1,4 @@
-package com.devsteammaster.poi
+package com.devsteammaster.poi.adapter
 
 import android.util.Log
 import android.view.LayoutInflater
@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.devsteammaster.poi.model.ListOfPlaces
+import com.devsteammaster.poi.R
 import com.squareup.picasso.Picasso
 
 class PlaceAdapter(

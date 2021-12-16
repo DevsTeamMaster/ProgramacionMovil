@@ -1,4 +1,4 @@
-package com.devsteammaster.poi
+package com.devsteammaster.poi.presentation
 
 import android.os.Bundle
 import android.util.Log
@@ -9,6 +9,11 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.devsteammaster.poi.model.ListOfPlaces
+import com.devsteammaster.poi.R
+import com.devsteammaster.poi.adapter.PlaceAdapter
+import com.devsteammaster.poi.model.ListOfPlacesViewModel
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 /**
  * A fragment representing a list of Items.
@@ -36,11 +41,17 @@ class ListFragment : Fragment(), PlaceAdapter.OnItemClickListener {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
+        val settingsButton = view.findViewById<FloatingActionButton>(R.id.float_settings_button)
+
         viewModel = ViewModelProvider(this).get(ListOfPlacesViewModel::class.java)
 
         viewModel.getListOfPlaces().observe(viewLifecycleOwner, {
             placesAdapter.updateListOfPlaces(it)
         })
+
+        settingsButton.setOnClickListener {
+            findNavController().navigate(R.id.action_listFragment_to_settingsFragment)
+        }
     }
 
     private fun setupRecyclerView(recyclerView: RecyclerView) {
